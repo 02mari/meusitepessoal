@@ -1,0 +1,133 @@
+/* 1. O fundo da página deve ter uma cor suave. [cite: 22] */
+body {
+    background-color: #f0f8ff; /* Um tom suave de azul claro (AliceBlue) */
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+    margin: 20px; /* Adiciona uma margem geral para melhor visualização */
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhor leitura */
+    color: #333; /* Cor de texto padrão para contraste */
+}
+
+/* 2. O título (<h1>) deve ter uma cor diferente e estar centralizado. [cite: 23] */
+h1 {
+    color: #4682b4; /* Um tom de azul aço */
+    text-align: center;
+    margin-bottom: 30px; /* Espaço abaixo do título */
+}
+
+/* 3. O parágrafo (<p>) deve ter um tamanho de fonte maior e ser justificado. [cite: 24] */
+p {
+    font-size: 1.1em; /* Tamanho de fonte 10% maior que o padrão */
+    text-align: justify;
+    margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+}
+
+/* Estilos para títulos secundários */
+h2 {
+    color: #5f9ea0; /* Um tom de azul cadete */
+    border-bottom: 1px solid #ccc; /* Linha sutil abaixo dos títulos */
+    padding-bottom: 5px;
+    margin-top: 40px; /* Espaço acima dos títulos */
+}
+
+/* 4. A lista (<ul>) deve ter um espaçamento maior entre os itens. [cite: 25] */
+ul {
+    list-style-type: disc; /* Garante que a lista não ordenada tenha marcadores de disco */
+    padding-left: 25px; /* Adiciona padding à esquerda para os marcadores */
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+/* 5. A imagem (<img>) deve ter bordas arredondadas e um tamanho adequado. [cite: 26] */
+img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 15px; /* Bordas arredondadas */
+    border: 2px solid #a0c4ff; /* Borda sutil para destacar */
+    display: block; /* Garante que a imagem se comporte como um bloco para margin auto */
+    margin: 20px auto; /* Centraliza a imagem e adiciona margem superior/inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+}
+
+/* 6. A tabela(<table>) deve estar estilizada. [cite: 33] */
+table {
+    width: 80%; /* Largura da tabela */
+    border-collapse: collapse; /* Colapsa as bordas da célula */
+    margin: 20px auto; /* Centraliza a tabela */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para a tabela */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Borda suave para células e tabela */
+}
+
+th, td {
+    padding: 12px 15px; /* Espaçamento interno das células */
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+thead th {
+    background-color: #a0c4ff; /* Cor de fundo para o cabeçalho da tabela */
+    color: white; /* Cor do texto no cabeçalho */
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo para linhas pares */
+}
+
+tbody td img {
+    width: 100px; /* Tamanho menor para imagens dentro da tabela */
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas menores */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem na célula */
+    border: none; /* Remove a borda extra que pode ser aplicada pela regra img geral */
+    box-shadow: none; /* Remove a sombra extra que pode ser aplicada pela regra img geral */
+}
+
+/* 7. O link (<a>) deve mudar de cor quando o usuário passar o mouse sobre ele. [cite: 34] */
+a {
+    color: #007bff; /* Cor padrão do link */
+    text-decoration: none; /* Remove sublinhado padrão */
+    transition: color 0.3s ease; /* Transição suave de cor ao passar o mouse */
+}
+
+a:hover {
+    color: #6a5acd; /* Cor diferente ao passar o mouse (azul ardósia) */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilos para o botão (já adicionados aqui para o visual inicial, será aprimorado no JS) */
+button {
+    background-color: #28a745; /* Verde para o botão */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    display: block; /* Para que o botão ocupe sua própria linha */
+    margin-left: auto; /* Centraliza o botão */
+    margin-right: auto; /* Centraliza o botão */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Tom mais escuro de verde ao passar o mouse */
+}
+
+/* Estilo para a mensagem que aparecerá (inicialmente oculta) */
+#mensagemTexto {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e0ffe0; /* Fundo verde claro para a mensagem */
+    border: 1px solid #a0e0a0;
+    border-radius: 5px;
+    text-align: center;
+    color: #228b22; /* Cor de texto verde escura */
+    display: none; /* Inicia oculto, será exibido pelo JavaScript */
+}
